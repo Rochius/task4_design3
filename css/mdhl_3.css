@@ -1,0 +1,598 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+body{
+  background-color: #e2e1de;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+
+.container_titles{
+  width: calc(100vw - 4rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 1rem 0 1rem;
+  position: absolute;
+}
+
+h1.title{
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding-left: 3rem;
+  padding: 3rem 0;
+}
+
+h2.title {
+  width: 35%;
+  text-align: end;
+}
+
+h2.title , .content_left > h3{
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.title {
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.banner{
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, -0.7)), url(../assets/img/design3_image1.jpg);
+  height: 35vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 73%;
+}
+
+.containerNav{
+  width: 100vw;
+  height: 3rem;
+  background-color: rgb(50, 50, 50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ffffff;
+}
+
+.containerNav > ul{
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.containerNav > ul > li{
+  width: 20%;
+  text-align: center;
+  border-right: 2px solid #ffffff;
+}
+
+.containerNav > ul > li:last-child{
+  border-right: none;
+}
+
+.nav_element{
+  text-decoration: underline;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.containerNav > ul , .nav_button > a{
+  color: #ffffff;
+}
+
+.nav_button > a:hover ,
+.logo_social:hover ,
+.form_imput__submit:hover{
+  font-size: 1.1rem;
+  transition: 200ms;
+  font-weight: 500;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+.logo > img{
+  width: 10vw;
+}
+
+.container{
+  width: calc(100vw - 4rem);
+  height: 54vh;
+  margin: 0 2rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container_img{
+  width: 27vw;
+  height: 100%;
+  background: linear-gradient(to left, rgb(226, 225, 222), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../assets/img/design3_image2.jpg);
+  background-size: cover;
+}
+
+.content_list{
+  list-style: none;
+}
+
+.card_background {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+}
+
+.about{
+  width: 67vw;
+}
+
+.about > li {
+  padding: 0.5rem;
+}
+
+.container_contact{
+  width: 65vw;
+}
+
+.container_contact , .content_right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content_left ,
+.content_right{
+  margin: 1.5rem 0;
+  width: 47.5%;
+  align-items: center;
+  text-align: center;
+}
+
+.content_left{
+  border-right: 1px solid #ffffff;
+}
+
+.content_left > h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.link_email{
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.container_social{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.logo_social{
+  width: 3rem;
+}
+
+.content_right > form{
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.form_imput{
+  width: calc(100% - 3rem);
+  padding: 0.5rem;
+  background-color: #ffffffab;
+  border-radius: 0.5rem;
+}
+
+textarea.form_imput{
+  height: 40%;
+}
+
+.form_imput__submit{
+  height: 2rem;
+  padding: 0 0.75rem;
+  border-radius: 0.25rem;
+}
+
+/*RULES*/
+
+.container.rules{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;background: linear-gradient(rgba(226, 225, 222, 0.71) , rgba(226, 225, 222, 0.71)) , url(../assets/img/logoMightyDucks-01.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container_titles_main{
+  width: 90%;
+  text-align: center;
+  padding: 1rem 0;
+  margin: 1.5rem 0;
+}
+
+.rules_list{
+  list-style: none;
+  width: 90%;
+}
+
+.rules_list__item{
+  background-color: rgba(0, 0, 0, 0.526);
+}
+
+.rules_list__item.sportsmanship{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sportsmanship_info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.sportsmanship_info > p{
+  text-align: justify;
+}
+
+.rules_img{
+  width: 30vw;
+  padding: 3rem 0;
+}
+
+div > img{
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+}
+
+.rules_list__item.regulations > h4{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.regulations_list{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: decimal;
+  list-style-position: inside;
+  justify-content: space-around;
+}
+
+.regulations_list__item{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: calc(30% - 2rem);
+}
+
+.regulations_list__item > h5 , .regulations_list__item > p{
+  display: inline;
+}
+
+.regulations_list__item:first-child{
+  position: relative;
+}
+
+.dimensions_img{
+  width: calc(100% - 2rem);
+  position: absolute;
+  bottom: 10%;
+}
+
+.regulations_list__item:last-child > ol{
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.rules_list__item.allplay{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.rules_list__item.allplay > h4{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.rules_list__item.allplay > div{
+  width: calc(50% - 3rem);
+}
+
+.rules_list__item.allplay > div > ul{
+  width: 80%;
+  list-style: disc;
+  list-style-position: inside;
+  margin-left: 3rem;
+}
+
+/*game info*/
+
+.game_info{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  background: linear-gradient(rgba(226, 225, 222, 0.71) , rgba(226, 225, 222, 0.71)) , url(../assets/img/design3_image7.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container_titles_main.info_titles{
+  margin: 1rem 5%;
+  font-size: 1.5rem;
+  width: 75%;
+}
+
+section.container{
+  height: auto;
+  margin: 0 5%;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.container_table{
+  width: 70%;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  color: #ffffff;
+}
+
+.schedule_table , .tabletwo{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedule_table > thead{
+  background-color: rgba(0, 0, 0, 0.739);
+  color: #ffffff;
+}
+
+.schedule_table > thead > tr > th {
+  height: 2rem;
+  padding-top: 0.5rem;
+}
+
+.schedule_table > thead > tr > th:first-child{
+  border-start-start-radius: 1rem;
+  border-end-start-radius: 1rem;
+}
+
+.schedule_table > thead > tr > th:last-child{
+  border-start-end-radius: 1rem;
+  border-end-end-radius: 1rem;
+}
+
+.innerb{
+  height: 60vh;
+  min-height: 200px;
+  overflow:auto;
+}
+
+/* tbody {
+  display: block;
+  height: 60vh;
+  min-height: 200px;
+  overflow-Y: scroll;
+}
+tr {
+  display: block;
+  overflow: hidden;
+} */
+
+.schedule_table__row > td{
+  line-height: 3rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.schedule_table__row{
+  border-top: rgba(0, 0, 0, 0.7) 2px solid;
+}
+.schedule_table__row:first-child{
+  border-top: none;
+}
+
+.game_date{
+  width: 15%;
+}
+.teams{
+  width: 15%;
+}
+.game_location{
+  width: 15%;
+}
+.game_time{
+  width: 15%;
+}
+
+tfoot{
+  width: 100%;
+  margin-top: 1rem;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.containerInformation{
+  width: 72%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.containerInformation > div{
+  margin-bottom: 1rem;
+}
+
+.containerInformation > div > p{
+  margin-bottom: 0.5rem;
+}
+
+.containerInformation > div > div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.containerInformation{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.map{
+  width: calc(100% - 3rem);
+  margin: 1rem 1.5rem;
+  height: 25vh;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px black;
+}
+
+/*REGISTRATION*/
+.container_form{
+  width: 80%;
+}
+.container_social.registration{
+  height: auto;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  justify-content: center;
+}
+
+.container_social.registration > .content_left , .container_social.registration > .content_right{
+  height: auto;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.container_social.registration > .content_right{
+  width: 29%;
+}
+
+.container_field.first{
+  height: 30vh;
+  margin-right: 0.5rem;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.container_field.first > label{
+  width: auto;
+  text-align: start;
+  margin-left: 0.5rem;
+}
+.container_field.first > input{
+  width: auto;
+  height: 1rem;
+}
+.adress{
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+.form_drop_down{
+  background-color: #ffffffab;
+  border-radius: 0.5rem;
+  height: 2rem;
+}
+
+.fifth > label > input{
+  width: auto;
+}
+.second > h4{
+  text-align: start;
+  margin-left: 0.5rem;
+  display: inline;
+}
+.second{
+  text-align: start;
+  margin-top: 1rem;
+}
+
+.second > label > h4{
+  display: inline;
+  margin-left: 0.5rem;
+}
+.container_social.registration > .content_right{
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container_options{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.container_field.third , .container_field.fourth{
+  width: calc(100% - 0.5rem);
+  margin-left: 0.5rem;
+}
+.container_field.fourth{
+  height: 45%;
+}
+.third > .container_options{
+  height: 50%;
+  margin-top: 0.5rem;
+}
+.third > .container_options > label{
+  height: 50%;
+}
+.fourth > .container_options{
+  height: 85%;
+  margin-top: 0.5rem;
+  justify-content: flex-start;
+}
+.fourth > .container_options > label{
+  height: 25%;
+}
+
+.container_field.fifth{
+  padding: 0.5rem;
+  margin-top: 1rem;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.fifth > div{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.fifth > div > label > input{
+  width: 20vw;
+}
+.fifth > .form_imput__submit{
+  width: 10vw;
+}
