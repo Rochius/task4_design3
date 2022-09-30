@@ -215,15 +215,8 @@ textarea.form_imput{
 
 /*RULES*/
 
-.container.rules{
-  width: 100vw;
-  height: auto;
-  display: flex;
-  flex-direction: column;
+.rules{
   font-size: 1.25rem;background: linear-gradient(rgba(226, 225, 222, 0.71) , rgba(226, 225, 222, 0.71)) , url(../assets/img/logoMightyDucks-01.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .container_titles_main{
@@ -335,13 +328,15 @@ div > img{
 /*game info*/
 
 .game_info{
+  margin: 0;
+  background: linear-gradient(rgba(226, 225, 222, 0.71) , rgba(226, 225, 222, 0.71)) , url(../assets/img/design3_image7.jpg);
+}
+.container_info{
   width: 100vw;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
-  background: linear-gradient(rgba(226, 225, 222, 0.71) , rgba(226, 225, 222, 0.71)) , url(../assets/img/design3_image7.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -595,4 +590,15 @@ tfoot{
 }
 .fifth > .form_imput__submit{
   width: 10vw;
+}
+
+.show_data > .container_table{
+  width: 40%;
+  margin-bottom: 1rem;
+}
+.show_data.rules{
+  background-position-y: 20%;
+}
+.field{
+  width: 50%;
 }
