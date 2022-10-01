@@ -8,14 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/mdhl_3.css">
-    <title>Contact - MDHL</title>
+    <title>Registration Form - MDHL</title>
 </head>
 <body>
     <header>
         <div class="container_titles">
             <div class="logo"><img src="../assets/img/logoMightyDucks-01.png" alt="Logo Mighty Ducks"></div>
             <h1 class="title">Mighty Ducks Hockey League</h1>
-            <h2 class="title">Game Information</h2>
+            <h2 class="title">Registration Form</h2>
         </div>
         <div class="banner"></div>
         <nav class="containerNav">
@@ -39,35 +39,26 @@
                 <div class="container_social card_background registration">
                     <div class="content_left">
                         <div class="container_field first">
-                            <!-- <div class="name_container">
-                                <label for="name">Player's First Name: </label><input type="text" id="name" required>
-                            </div> -->
-                            <label for="first_name">Player's First Name:</label><input type="text" name="first_name" class="form_imput" id="first_name" required placeholder="Please, enter your first name">
+                            <label for="first_name">Player's First Name*:</label><input type="text" name="first_name" class="form_imput" id="first_name" required placeholder="Please, enter your first name">
                             
-                            <label for="last_name">Last Name:</label><input type="text" name="last_name" class="form_imput" id="last_name"  required placeholder="Please, enter your last name">
+                            <label for="last_name">Last Name*:</label><input type="text" name="last_name" class="form_imput" id="last_name"  required placeholder="Please, enter your last name">
                             
-                            <label for="adress">Street Adress:</label><input type="text" name="adress" class="form_imput adress" id="adress"  required placeholder="Please, enter your adress">
+                            <label for="adress">Street Adress*:</label><input type="text" name="adress" class="form_imput adress" id="adress"  required placeholder="Please, enter your adress">
                             
-                            <label for="city">City:</label><input type="text" name="city" class="form_imput"id="city"  required placeholder="Please, enter your city">
+                            <label for="city">City*:</label><input type="text" name="city" class="form_imput" id="city"  required placeholder="Please, enter your city">
                             
-                            <label for="zip_code">Zip Code:</label><input type="text" name="zip_code" class="form_imput" id="zip_code"  placeholder="Please, enter your zip code">
+                            <label for="zip_code">Zip Code*:</label><input type="text" name="zip_code" class="form_imput" id="zip_code"  placeholder="Please, enter your zip code">
                             
-                            <label for="birth_date">Birth Date:</label><input type="date" name="birth_date" class="form_imput" id="birth_date"  required>
+                            <label for="birth_date">Birth Date*:</label><input type="date" name="birth_date" class="form_imput" id="birth_date"  required>
                             
-                            <label for="gender">Gender: </label>
+                            <label for="gender">Gender*: </label>
                             <select name="gender" id="gender" class="form_drop_down">
                                 <option value="Female">Female</option>
                                 <option value="Male">Male</option>
                                 <option value="Non-binary">Non-binary</option>
                                 <option value="N/A">Prefer not to answer</option>
                             </select>
-                            <!-- <div id="container_gender">
-                                <label>Female <input type="radio" id="female" name="gender" value="F" required> </label>
-                                <label>Male <input type="radio" id="male" name="gender" value="M" required> </label>
-                                <label>Prefer not to answer <input type="radio" id="not_answer" name="gender" value="N/A" required> </label>
-                                <label for="non-binary">Non-binary </label><input type="radio" id="non-binary" name="gender">
-                            </div> -->
-                            <label for="grade">Grade: </label>
+                            <label for="grade">Grade*: </label>
                             <select name="grade" id="grade" class="form_drop_down">
                                 <option value="Pre-School">Pre-School</option>
                                 <option value="1th">1th</option>
@@ -76,18 +67,10 @@
                                 <option value="4th">4th</option>
                                 <option value="5th">5th</option>
                             </select>
-                            <!-- <div id="container_grade">
-                                <label><input type="radio" value="Pre-School" name="grade">Pre-School</label>
-                                <label><input type="radio" value="1th" name="grade">1th</label>
-                                <label><input type="radio" value="2nd" name="grade">2nd</label>
-                                <label><input type="radio" value="3rd" name="grade">3rd</label>
-                                <label><input type="radio" value="4th" name="grade">4th</label>
-                                <label><input type="radio" value="5th" name="grade">5th</label>
-                            </div> -->
                         </div>
                         <div class="container_field second">
                                 <h4 class="title">Which elementary school do you live near?</h4>
-                                <label for="closest_school"><h4>Closest School:</h4></label>
+                                <label for="closest_school">Closest School*:</label>
                                     <select name="closest_school" id="closest_school" class="form_drop_down">
                                         <option value="AJ Katzenmaier">AJ Katzenmaier</option>
                                         <option value="Greenbay">Greenbay</option>
@@ -96,19 +79,11 @@
                                         <option value="North Elementary">North Elementary</option>
                                         <option value="South Elementary">South Elementary</option>
                                     </select>
-                            <!-- <div class="container_options">
-                                <label><input type="radio" name="closest_school" value="AJ Katzenmaier" id="aj_katzenmaier">AJ Katzenmaier</label>
-                                <label><input type="radio" name="closest_school" value="Greenbay">Greenbay</label>
-                                <label><input type="radio" name="closest_school" value="Howard A Yeager">Howard A Yeager</label>
-                                <label><input type="radio" name="closest_school" value="Marjorie P Hart">Marjorie P Hart</label>
-                                <label><input type="radio" name="closest_school" value="North Elementary">North Elementary</label>
-                                <label><input type="radio" name="closest_school" value="South Elementary">South Elementary</label>
-                            </div> -->
                         </div>
                     </div>
                     <div class="content_right">
                         <div class="container_field third">
-                            <h4 class="title">What position(s) do you normally play? (check all that apply)</h4>
+                            <h4 class="title">What position(s) do you normally play? (check all that apply)*</h4>
                             <div class="container_options">
                                 <label><input type="checkbox" value="Forward" id="forward" name="position">Forward</label>
                                 <label><input type="checkbox" value="Defense" id="defense" name="position">Defense</label>
@@ -117,7 +92,7 @@
                             </div>
                         </div>
                         <div class="container_field fourth">
-                            <h4 class="title">Uniform Size</h4>
+                            <h4 class="title">Uniform Size*</h4>
                             <div class="container_options">
                                 <label><input type="checkbox" value="Youth Small" id="youth_small" name="uniform_size">Youth Small</label>
                                 <label><input type="checkbox" value="Youth Medium" id="youth_medium" name="uniform_size">Youth Medium</label>
@@ -134,10 +109,13 @@
                         <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In reconizing the possibility of physical injury associated with hockey and in consideration for the "League" accepting the registrant for its their employees and associated personnel and volunteers, including the facilities used for registrant's participation in the programand/orbeing transported to or from MDHL sponsored activities, which transportation.</p>
                         <p>By entering your name below, I herebyagree andautorizethe above. In addition, by signing below. I also acknowledge that I have read the cancellation policy and agree to its terms.</p>
                         <div>
-                            <label>Parent/Guardian Signature: <input type="text" name="signature" required class="form_imput" placeholder="Please, enter your full name"></label>
-                            <label>Date: <input type="date" name="date" required class="form_imput"></label>
+                            <label>Parent/Guardian Signature*: <input type="text" name="signature" required class="form_imput" placeholder="Please, enter your full name"></label>
+                            <label>Date*: <input type="date" name="date" required class="form_imput"></label>
                         </div>
+                        
+                        
                         <div>
+                            <!-- <p>(*)Required to send the registration form</p> -->
                             <input class="form_imput__submit" type="submit" name="submit" value="Submit">
                         </div>
                     </div>

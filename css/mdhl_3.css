@@ -12,10 +12,37 @@ body{
   background-color: #e2e1de;
   font-family: 'Montserrat', sans-serif;
   position: relative;
+  width: 100%;
 }
 
+/*////////////////////////////////////////////////*/
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 12px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #797979bd;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 12px;
+  background-color: #f1f2f36a;  
+}
+
+/*////////////////////////////////////////////////*/
+
 .container_titles{
-  width: calc(100vw - 4rem);
+  width: calc(100% - 4rem);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,7 +82,7 @@ h2.title , .content_left > h3{
 }
 
 .containerNav{
-  width: 100vw;
+  width: 100%;
   height: 3rem;
   background-color: rgb(50, 50, 50);
   display: flex;
@@ -108,7 +135,7 @@ h2.title , .content_left > h3{
 
 .container{
   width: calc(100vw - 4rem);
-  height: 54vh;
+  height: 57vh;
   margin: 0 2rem;
   display: flex;
   align-items: center;
@@ -118,7 +145,7 @@ h2.title , .content_left > h3{
 .container_img{
   width: 27vw;
   height: 100%;
-  background: linear-gradient(to left, rgb(226, 225, 222), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../assets/img/design3_image2.jpg);
+  background: linear-gradient(to left, rgb(226, 225, 222), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(226, 225, 222)), url(../assets/img/design3_image2.jpg);
   background-size: cover;
 }
 
@@ -140,7 +167,7 @@ h2.title , .content_left > h3{
 }
 
 .about > li {
-  padding: 0.5rem;
+  padding: 0.7rem;
 }
 
 .container_contact{
@@ -256,7 +283,7 @@ textarea.form_imput{
   padding: 3rem 0;
 }
 
-div > img{
+li > div > img{
   width: 100%;
   border-radius: 1rem;
   box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
@@ -332,7 +359,7 @@ div > img{
   background: linear-gradient(rgba(226, 225, 222, 0.71) , rgba(226, 225, 222, 0.71)) , url(../assets/img/design3_image7.jpg);
 }
 .container_info{
-  width: 100vw;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -362,15 +389,35 @@ section.container{
   border-radius: 1rem;
   color: #ffffff;
 }
+/* .container_table::-webkit-scrollbar{
+  display: ;
+} */
 
-.schedule_table , .tabletwo{
+
+.schedule_table{
   width: 100%;
   border-collapse: collapse;
 }
 
-.schedule_table > thead{
+.titles_table{
+  width: 72%;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
   background-color: rgba(0, 0, 0, 0.739);
+  box-shadow: 2px 2px 5px hsl(0deg 0% 0% / 50%);;
   color: #ffffff;
+  border-radius: 1rem;
+  display: flex;
+}
+
+.titles_table p{
+  width: 15%;
+  border-right: 1px solid #ffffff;
+}
+.titles_table p:last-child{
+  width: 40%;
+  border-right: none;
 }
 
 .schedule_table > thead > tr > th {
@@ -378,32 +425,11 @@ section.container{
   padding-top: 0.5rem;
 }
 
-.schedule_table > thead > tr > th:first-child{
-  border-start-start-radius: 1rem;
-  border-end-start-radius: 1rem;
-}
-
-.schedule_table > thead > tr > th:last-child{
-  border-start-end-radius: 1rem;
-  border-end-end-radius: 1rem;
-}
-
 .innerb{
   height: 60vh;
   min-height: 200px;
   overflow:auto;
 }
-
-/* tbody {
-  display: block;
-  height: 60vh;
-  min-height: 200px;
-  overflow-Y: scroll;
-}
-tr {
-  display: block;
-  overflow: hidden;
-} */
 
 .schedule_table__row > td{
   line-height: 3rem;
@@ -418,17 +444,16 @@ tr {
   border-top: none;
 }
 
-.game_date{
+.column_width , .game_date , .teams , .game_location , .game_time{
   width: 15%;
 }
-.teams{
-  width: 15%;
-}
-.game_location{
-  width: 15%;
-}
-.game_time{
-  width: 15%;
+
+.map{
+  margin: 1rem;
+  width: auto;
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 tfoot{
@@ -462,17 +487,9 @@ tfoot{
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.map{
-  width: calc(100% - 3rem);
-  margin: 1rem 1.5rem;
-  height: 25vh;
-  border-radius: 1rem;
-  box-shadow: 2px 2px 5px black;
-}
-
 /*REGISTRATION*/
 .container_form{
-  width: 80%;
+  width: 90%;
 }
 .container_social.registration{
   height: auto;
@@ -598,7 +615,4 @@ tfoot{
 }
 .show_data.rules{
   background-position-y: 20%;
-}
-.field{
-  width: 50%;
 }
